@@ -56,6 +56,10 @@ body.dark-mode {
 
 
 #form-container {
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 400px;
+    max-width: 450px;
     margin-left: 5%;
     width: 45%;
     height: 50%;
