@@ -1,9 +1,9 @@
-document.getElementById('login-btn').addEventListener('click', async () => {
+document.getElementById('signup-btn').addEventListener('click', async () => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
   
     try {
-      const response = await fetch('/api/login', {
+      const response = await fetch('/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -14,16 +14,12 @@ document.getElementById('login-btn').addEventListener('click', async () => {
       const result = await response.json();
   
       if (response.ok && result.success) {
-        window.location.href = '/html/home.html';
+        window.location.href = 'authentication.html';
       } else {
         alert(result.message || 'Invalid username or password.');
       }
     } catch (error) {
-      console.error('Login failed:', error);
-      alert('Login request failed. Please try again later.');
+      console.error('Signup failed:', error);
+      alert('Signup request failed. Please try again later.');
     }
-  });
-
-  document.getElementById('registration-btn').addEventListener('click', async () => {
-    window.location.href = '/html/registration.html';
   });

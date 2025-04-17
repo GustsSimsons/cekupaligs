@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autentifikācija</title>
-    <link rel="stylesheet" href="/css/authentication.css">
+    <title>Reģistrācija</title>
+    <link rel="stylesheet" href="/css/registration.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -27,16 +27,14 @@
             <img src="/images/german.png" alt="change website to german language" id="german">
         </div>
         <div id="form-container">
-            <h1 id="form-h1">Autentifikācija</h1>
+            <h1 id="form-h1">Reģistrācija</h1>
             <input type="text" id="username" placeholder="" required>
             <input type="password" id="password" placeholder="" required>
-            <button id="login-btn">Ienākt</button>
-            <p id="forget-p"><a href="" id="forget-a">Aizmirsi paroli?</a></p>
-            <hr>
-            <button id="registration-btn">Izveidotu jaunu kontu</button>
+            <button id="signup-btn">Ienākt</button>
+            <p><a href="authentication.html" id="already-have">Jau ir profils?</a></p>
         </div>
     </div>
-    <script src="/scripts/authentication.js"></script>
-    <script src="/scripts/auth_pref.js"></script>
+    <script src="/scripts/registration.js"></script>
+    <script src="/scripts/reg_pref.js"></script>
 </body>
 </html>
