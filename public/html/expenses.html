@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly expenses</title>
+    <link rel="stylesheet" href="/css/expenses.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <img src="/images/dark_mode.png" id="theme-toggle"></img>
+    <div id="left">
+        <div id="container-left">
+            <div id="left-upper">
+                <h1 id="main-h1">Weekly Expenses</h1>
+                <button id="stats-btn">Go to my stats</button>
+            </div>
+            <div id="left-lower">
+                <img src="/images/stats.png" alt="Statisctics shown here" id="stats-img">
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="container-right">
+            <div id="right-upper">
+                <h1 id="receipt-h1">Add receipt from PDF</h1>
+                <div id="container-upload">
+                    <div id="upload-upper">
+                        <h2 id="title-h2">Drag and drop</h2>
+                    </div>
+                    <div id="lower-upload">
+                        <img src="/images/upload.png" alt="Upload image" id="upload-img" draggable="false">
+                        <input type="file" id="fileInput" style="display: none;"/>
+                    </div>
+                </div>
+            </div>
+            <div id="right-lower">
+                <button id="browse-btn">Choose File</button>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/expenses.js"></script>
+</body>
+</html>
