@@ -5,7 +5,7 @@ toStatsBtn.addEventListener("click", () => {
 
 toHomeBtn = document.getElementById("home-btn");
 toHomeBtn.addEventListener("click", () => {
-    window.location.href = "../html/home.html"
+    window.location.href = "../html/expenses.html"
 })
 
 saveBtn = document.getElementById("save-btn");
@@ -15,7 +15,7 @@ saveBtn.addEventListener("click", () => {
 
 cancelBtn = document.getElementById("canc-btn");
 cancelBtn.addEventListener("click", () => {
-    window.location.href = "../html/home.html"
+    window.location.href = "../html/expenses.html"
 })
 
 
