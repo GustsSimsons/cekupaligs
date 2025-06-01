@@ -1,7 +1,7 @@
 toStatsBtn = document.getElementById("home-btn");
 
 toStatsBtn.addEventListener("click", () => {
-    window.location.href = "../html/home.html"
+    window.location.href = "../html/expenses.html"
 })
 
 
