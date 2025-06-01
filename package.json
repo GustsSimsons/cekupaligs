@@ -1,0 +1,15 @@
+{
+  "name": "cekupaligs",
+  "version": "1.0.0",
+  "description": "Upload your receipts and get simple, monthly spending insights. cekupaligs.com helps you track where your money goes—without the hassle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

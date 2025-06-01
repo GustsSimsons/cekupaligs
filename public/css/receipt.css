@@ -1,0 +1,178 @@
+#stats-img {
+    width: 100%;
+    border-radius: 40px;
+}
+#upload-img {
+    padding: 20px;
+    width: 50%;
+    border: 2px dashed black;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: #6fbf68;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+body.dark-mode {
+    background-color: #3c3c3b;
+}
+
+#left, #right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+#left {
+    width: 40%;
+}
+#right {
+    width: 60%;
+}
+#container-left, #container-right, #left-upper, #left-lower {
+    align-items: center;
+}
+#container-right, #container-left {
+    height: 70%;
+    min-width: 550px;
+}
+#container-right, #left-upper, #left-lower {
+    border-radius: 35px;
+    background-color: #f1ebe5;
+}
+
+#container-left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#container-right {
+    padding: 2%;
+    padding-bottom: 5%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#left-upper, #left-lower {
+    justify-content: space-evenly;
+}
+#left-upper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+#left-lower {
+    width: 100%;
+    height: 20%;
+    margin-top: 4%;
+    display: flex;
+}
+
+button {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 16pt;
+    transition: 0.1s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+
+#theme-toggle {
+    width: 2%;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    cursor: pointer;
+}
+
+
+#right-upper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+#uploaded-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 40px;
+    width: 70%;
+    height: 70%;
+}
+
+#right-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#container-details{
+    background-color: white;
+    padding-top: 3%;
+    border-radius: 40px;
+    width: 90%;
+}
+#receipt-det {
+    display: flex;
+}
+#store-div, #total-div {
+    display: flex;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+#items {
+    padding-left: 5%;
+}
+
+#receipt-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+#save-btn, #canc-btn {
+    width: 160px;
+}
+#save-btn {
+    background-color: #67b800;
+}
+#canc-btn {
+    background-color: red;
+}
+#stats-btn, #home-btn {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.receipt-fieldname, .receipt-params {
+    font-size: 16pt;
+    padding-right: 5px;
+}
+.receipt-fieldname {
+    font-weight: bold;
+}
+#title-h2, #receipt-name {
+    font-weight: normal;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Čeka detaļas</title>
+    <link rel="stylesheet" href="../css/receipt.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <img src="../images/dark_mode.png" id="theme-toggle"></img>
+    <div id="left">
+        <div id="container-left">
+            <div id="left-upper">
+                <h1 id="receipt-h1">Receipt from PDF</h1>
+                <div id="uploaded-pdf">
+                    <h2 id="title-h2">Receipt</h2>
+                    <img src="../images/receipt.png" alt="Stylized image of receipt" id="upload-img" draggable="false">
+                    <p id="receipt-name">receipt.pdf</p>
+                </div>
+                <div id="receipt-btns">
+                    <button id="save-btn">Save</button>
+                    <button id="canc-btn">Cancel</button>
+                </div>
+                
+            </div>
+            <div id="left-lower">
+                <button id="stats-btn">Check my stats</button>
+                <button id="home-btn">Home</button>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="container-right">
+            <div id="right-upper">
+                <h1 id="main-h1">Receipt details</h1>
+            </div>
+            <div id="container-details">
+                <div id="receipt-det">
+                    <div id="store-div">
+                        <p class="receipt-fieldname" id="store">Store:</p>
+                        <p class="receipt-params" id="param-store">Maxima</p>
+                    </div>
+                    <div id="total-div">
+                        <p class="receipt-fieldname" id="total">Total:</p>
+                        <p class="receipt-params" id="param-total">86.25€</p>
+                    </div>
+                </div>
+                <p class="receipt-fieldname" id="items">Items:</p>
+                <div id="right-lower">
+                    <img src="../images/receipt-items.png" alt="Items in the receipt" id="stats-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/receipt.js"></script>
+</body>
+</html>
