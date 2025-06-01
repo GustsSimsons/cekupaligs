@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats</title>
+    <link rel="stylesheet" href="../css/stats.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>stats</h1>
+    <div id="top">
+        <div id="container-left">
+            <img src="../images/dark_mode.png" id="theme-toggle"></img>
+        </div>
+        <div id="container-middle">
+            <h1 id="main-h1">My stats</h1>
+            <button id="home-btn">Home</button>
+        </div>
+        <div id="container-right">
+            <form>
+                <div id="form-top">
+                    <div id="form-period">
+                        <label for="period" id="label-period">Period:</label>
+                        <select name="period" id="period">
+                            <option value="Yearly">Yearly</option>
+                            <option value="Monthly">Mothly</option>
+                            <option value="Daily">Daily</option>
+                        </select>
+                    </div>
+                    <div id="form-group">
+                        <label for="show_as" id="label-show">Show as:</label>
+                        <select name="show_as" id="show_as">
+                            <option value="Groups">Groups</option>
+                            <option value="List">List</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="form_bottom">
+                    <div id="form-left">
+                        <div class="form-cat">
+                            <label for="item_cat" id="label-cat">Item category:</label>
+                            <select name="item_cat" id="item_cat">
+                                <option value="All">All</option>
+                                <option value="Food">Food</option>
+                            </select>
+                        </div>
+                        <div class="form-cat">
+                            <label for="stores" id="label-store">Store(-s):</label>
+                            <select name="stores" id="stores">
+                                <option value="Maxima">Maxima</option>
+                                <option value="Rimi">Rimi</option>
+                                <option value="LIDL">LIDL</option>
+                                <option value="Lats">Lats</option>
+                                <option value="Top">Top</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="form-right">
+                        <button type="submit" id="filter-btn">Search</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div id="bottom">
+        <img src="../images/my_stats.png" alt="Statisctics shown here" id="stats-img">
+    </div>
+    <script src="../scripts/stats.js"></script>
 </body>
 </html>
